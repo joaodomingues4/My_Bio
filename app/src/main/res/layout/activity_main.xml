@@ -18,11 +18,63 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/abril_fatface"
 
-            android:text="João Guilherme Santos Domingues"
+            android:text="@string/jo_o_guilherme_santos_domingues"
             android:textAlignment="center"
             android:textColor="@color/design_default_color_error"
-            android:textSize="30dp"
+            android:textSize="23sp"
+            android:padding="10dp"
             android:textStyle="bold" />
+
+
+        <!-- ask for users nickname -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textAlignment="center"
+            android:text="@string/what_is_your_nickname" />
+
+        <EditText
+            android:id="@+id/nicknameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <Button
+            android:id="@+id/nicknameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/done" />
+
+        <!-- present the users nickname -->
+        <TextView
+            android:id="@+id/showNicknameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            android:text="" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!-- present the users cv -->
+        <TextView
+            android:id="@+id/usersCV_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10dp"
+            android:text="@string/users_cv" />
+
+        </ScrollView>
     </LinearLayout>
 
 
